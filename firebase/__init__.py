@@ -1,4 +1,4 @@
-from firebase import Firebase
+from firebase.firebase import Firebase
 
 __all__ = [
     'Firebase'
