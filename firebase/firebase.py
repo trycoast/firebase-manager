@@ -1,6 +1,7 @@
 import operator
 from functools import reduce
-from firebase_admin import credentials, db, initialize_app
+import firebase_admin
+from firebase_admin import credentials, db
 from pydantic.utils import deep_update
 
 
@@ -18,7 +19,7 @@ class Firebase:
             rel_path (str, optional): The relative path inside database to shrink path args and isolate data access.
         """
         db_credentials = credentials.Certificate(creds)
-        initialize_app(db_credentials, {'databaseURL': url}, name=name if name else '[DEFAULT]')
+        firebase_admin.initialize_app(db_credentials, {'databaseURL': url}, name=name if name else '[DEFAULT]')
 
         if rel_path:
             rel_path = rel_path + '/' if rel_path[-1] != '/' else rel_path
