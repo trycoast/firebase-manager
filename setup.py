@@ -1,0 +1,32 @@
+from setuptools import setup
+
+
+
+def readme():
+    '''Read README file'''
+    with open('README.rst') as infile:
+        return infile.read()
+
+
+setup(
+    name='firebase-manager',
+    version=firebase.__version__,
+    description='Database manager for firebase',
+    long_description=readme().strip(),
+    author='',
+    author_email='',
+    url='https://github.com/trycoast/firebase-manager',
+    license='MIT',
+    packages=['firebase-manager'],
+    install_requires=['requests', 'firebase_admin', 'pydantic'],
+    keywords=[
+        'storage',
+        'firebase',
+        'firestore',
+        'firebase_admin',
+        'firebase-manager',
+        'database-manager',
+    ],
+    include_package_data=True,
+    zip_safe=False
+)
