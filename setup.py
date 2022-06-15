@@ -1,5 +1,7 @@
 from setuptools import setup
 
+import firebase
+
 
 
 def readme():
