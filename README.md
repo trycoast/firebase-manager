@@ -1,8 +1,8 @@
-Firebase Manager
+# Firebase Manager
 
 A simple client that extends the usability of firebase by wrapping firebase_admin functionality with various utility functions.
 
-Features
+## Features
 
 - Maintains a local cache of any database changes; reducing the need for network calls drastically.
 - Supports relative paths; e.g. "users/<user_id>" can be abstracted away to isolate changes and to truncate the path.
@@ -19,5 +19,5 @@ db.delete('name')
 
 ## TODO
 
-TODO: support firestore
-TODO: support storage
+[] support firestore
+[] support storage
