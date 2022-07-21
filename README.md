@@ -11,7 +11,7 @@ A simple client that extends the usability of firebase by wrapping firebase_admi
 
 ```py
 from firebase import Firebase
-db = Firebase(creds='path/to/auth.json', rel_path='users/<user_id>', cache=True)
+db = Firebase(creds='path/to/auth.json', url='firebase/database_url', rel_path='users/<user_id>', cache=True)
 db.update({'name': 'John Doe'})
 db.read('name')
 db.delete('name')
