@@ -8,11 +8,13 @@ Features
 
 Usage
 -----
+```py
 from firebase import Firebase
 db = Firebase(creds='path/to/auth.json', rel_path='users/<user_id>', cache=True)
 db.update({'name': 'John Doe'})
 db.read('name')
 db.delete('name')
+```
 
     
 TODO
