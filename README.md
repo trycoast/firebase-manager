@@ -19,5 +19,5 @@ db.delete('name')
 
 ## TODO
 
-[] support firestore
-[] support storage
+- support firestore
+- support storage
