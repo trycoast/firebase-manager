@@ -20,7 +20,7 @@ setup(
     url='https://github.com/trycoast/firebase-manager',
     license='MIT',
     packages=['firebase'],
-    install_requires=['requests', 'firebase-admin', 'pydantic'],
+    install_requires=['requests', 'firebase_admin', 'pydantic'],
     keywords=[
         'storage',
         'firebase',
