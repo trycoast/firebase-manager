@@ -6,7 +6,7 @@ import firebase
 
 def readme():
     '''Read README file'''
-    with open('README.rst') as infile:
+    with open('README.md') as infile:
         return infile.read()
 
 
