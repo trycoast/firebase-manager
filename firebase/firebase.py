@@ -1,7 +1,7 @@
 import operator
 from functools import reduce
 import firebase_admin
-from firebase_admin import credentials, db
+from firebase_admin import credentials, db, auth
 from pydantic.utils import deep_update
 
 
@@ -20,6 +20,7 @@ class Firebase:
         """
         db_credentials = credentials.Certificate(creds)
         firebase_admin.initialize_app(db_credentials, {'databaseURL': url}, name=name if name else '[DEFAULT]')
+        self.auth = auth
 
         if rel_path:
             rel_path = rel_path + '/' if rel_path[-1] != '/' else rel_path
